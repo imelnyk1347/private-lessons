@@ -1,3 +1,5 @@
 venv/
 env/
-.idev/
+.idea/
+__pycache__/
+.pyc
