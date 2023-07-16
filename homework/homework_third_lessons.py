@@ -17,6 +17,9 @@
 #     print(user_input.lower())
 # else:
 #     print('Error: unexpected result!')
+
+# Артем, виправи помилки в коді )))
+
 """
 2. Написати скрипт, який прийматиме на перевірку слово.
    Наприклад, юзер вводить 'SpaceX' і скрипт:
@@ -65,10 +68,13 @@
 # elif text.count(user_input) == 0:
 #     if user_input.isdigit():
 #         print(f'The search for the digit "{user_input}" was not found.')
-#         exit()
+#         exit()  # Артем, спробуй дома написати скрипт з використанням данної функції
 #     print(f'The search for "{user_input}" was not found.')
 # elif text.count(user_input) > 0:
 #     print(f'Find: "{user_input}". Count: {text.count(user_input)}')
+
+
+# Артем, подивися, можливо в коді є якіст помилки або ж код можна покращити
 """
 4. Програма прийматиме дані юзера на вхід: ім'я, прізвище, вік, місце проживання, кількість батьків і виводитиме 
    введену інформацію в такому вигляді: 'Ваші дані успішно прийнято. Ваше прізвище та ім'я ""., Ваше місце народження та
