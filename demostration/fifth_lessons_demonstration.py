@@ -1,33 +1,104 @@
 """
-Agenda
+    Agenda
 
-1. Circles 'for' / 'while'
-2. range() ;  https://www.freecodecamp.org/ukrainian/news/tsykl-for-u-python-pryklad-syntaksysu/
-3. cirle for in list / string;
-4. break , continue in for / while circles ;
-5. pass()
+ 1. Circles 'for' / 'while'
+ 2. range() ;  https://www.freecodecamp.org/ukrainian/news/tsykl-for-u-python-pryklad-syntaksysu/
+ 3. cirle for in list / string;
+ 4. break , continue in for / while circles ;
+ 5. pass()
 
-presentation: https://docs.google.com/presentation/d/1qaukUA4OLjYnZgc1ylE_YqDrrvua5vsNlLMj2rmZwY4/edit?usp=sharing
+ - presentation: https://docs.google.com/presentation/d/1qaukUA4OLjYnZgc1ylE_YqDrrvua5vsNlLMj2rmZwY4/edit?usp=sharing
 
-for: https://www.w3schools.com/python/python_for_loops.asp ; https://www.freecodecamp.org/ukrainian/news/tsykl-for-u-python-pryklad-syntaksysu/
+ - for: https://www.w3schools.com/python/python_for_loops.asp ; https://www.freecodecamp.org/ukrainian/news/tsykl-for-u-python-pryklad-syntaksysu/
 
-while: https://www.w3schools.com/python/python_while_loops.asp
+ - while: https://www.w3schools.com/python/python_while_loops.asp
 
-loops inside loops: https://www.w3schools.com/python/gloss_python_for_nested.asp
+ - loops inside loops: https://www.w3schools.com/python/gloss_python_for_nested.asp
 
-range: http://ruslan.rv.ua/python-starter/loop_for/range.html
+ - range: http://ruslan.rv.ua/python-starter/loop_for/range.html
 
-pass: https://www.w3schools.com/python/gloss_python_for_pass.asp
+ - pass: https://www.w3schools.com/python/gloss_python_for_pass.asp
 
-continue: https://www.w3schools.com/python/gloss_python_for_continue.asp
+ - continue: https://www.w3schools.com/python/gloss_python_for_continue.asp
 
-break: https://www.w3schools.com/python/gloss_python_for_break.asp
+ - break: https://www.w3schools.com/python/gloss_python_for_break.asp
 
 """
-example = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+# numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+#
+# for number in numbers:
+#     pass
 
-for number in range(1, len(example), 2):
-    print(number)
+#1 спосіб виходу з циклу в самій умові while
+# number = 0
+# numbers = 15
+# while number < numbers:
+#     print(number)
+#     number += 1
+#
+#
+# number = 0
+# while number < 15:
+#     print(number)
+#     number += 1
+#
+#
+# number = 0
+# numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+# while number < len(numbers):
+#     print(number)
+#     number += 1
+
+#2 спосіб виходу з циклу
+# names = ['Ivan', 'Serhiy', 'Volodymyr', 'Artem', ' ']
+# name = 'Artem'
+# while True:
+#     if name in names:
+#         print('Found')
+#         break
+#     else:
+#         print('Not found')
+#         break
+
+# Не запускай, бо зависне комп
+# names = ['Ivan', 'Serhiy', 'Volodymyr', 'Artem', ' ']
+# name = input('Enter you name: ')
+#
+# while True:
+#     if name in names:
+#         print('Found')
+#     else:
+#         print('Not found')
+#
+#
+# print('OK')
+
+#3 спосіб виходу з циклу
+
+# names = ['Ivan', 'Serhiy', 'Volodymyr', 'Artem', ' ']
+#
+# name = 'Anton'
+#
+# iterations = True
+#
+# while iterations:
+#     if name in names:
+#         print('Found')
+#         iterations = False
+#     else:
+#         print('Not found')
+#         iterations = False
+#
+# print('OK')
+
+
+# example = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+# for number in range(-100, -150, -1):
+#     print(number)
+
+# for number in range(1, len(example), 2):
+#     print(number)
 
 
 # example = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
@@ -51,6 +122,7 @@ for number in range(1, len(example), 2):
 #     print(i ** 2)
 # print('Конец цикла')
 
+# ----------------------------------------------------------------
 # number = True
 # while number:
 #     name = input('Enter your name: ')
@@ -74,6 +146,12 @@ for number in range(1, len(example), 2):
 #         print(listeng[i])
 #     i += 1
 #
+
+
+
+
+
+
 # my_list = [1, 2, 3, 4, 5]
 #
 # i = 0
@@ -82,6 +160,15 @@ for number in range(1, len(example), 2):
 #     print(my_list[i])
 #     i += 1
 #
+# print('End of while circle.')
+#
+# for i in range(1, 5):
+#     print(i)
+
+
+
+#
+
 # list_of_words = ["apple", "banana", "cherry"]
 #
 # for word in list_of_words:
@@ -100,13 +187,13 @@ for number in range(1, len(example), 2):
 # for list in list_of_lists:
 #     print(list[0], list[1])
 #
-# list_of_words = ["apple", "banana", "cherry", "orange", "lemon"]
-# fruits = ["apple", "banana", "cherry"]
-# for word in list_of_words:
-#     if word in fruits:
-#         print(word, "is a fruit")
-#     else:
-#         print(word, "is not a fruit")
+list_of_words = ["apple", "banana", "cherry", "orange", "lemon"]
+fruits = ["apple", "banana", "cherry"]
+for word in list_of_words:
+    if word in fruits:
+        print(word, "is a fruit")
+    else:
+        print(word, "is not a fruit")
 
 # list_of_words = ["apple", "banana", "cherry", "orange", "lemon"]
 # fruits = input('Enter fruit, please: ')
