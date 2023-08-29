@@ -140,22 +140,22 @@ var = {
     "United Kingdom": "Lomdon"
 }
 """
-# capitals = ["Kyiv", "Washington, D.C.", "Paris", "Berlin", "Tokyo", "Warsaw", 'London']
-#
-# countries_capitals = {
-#     "Ukraine": "Kivy",
-#     "USA": "Weshinton, P.C.",
-#     "France": "Paris",
-#     "Germany": "Berlin",
-#     "Japan": "Tokyo",
-#     "Poland": "Warsaw",
-#     "United Kingdom": "Lomdon"
-# }
-#
-# exam_dict = {}
-# for key, value in countries_capitals.items():
-#     if value in capitals:
-#         exam_dict[key] = value
-#
-# print(exam_dict)
+capitals = ["Kyiv", "Washington, D.C.", "Paris", "Berlin", "Tokyo", "Warsaw", 'London']
+
+countries_capitals = {
+    "Ukraine": "Kivy",
+    "USA": "Weshinton, P.C.",
+    "France": "Paris",
+    "Germany": "Berlin",
+    "Japan": "Tokyo",
+    "Poland": "Warsaw",
+    "United Kingdom": "Lomdon"
+}
+
+exam_dict = {}
+for key, value in countries_capitals.items():
+    if value in capitals:
+        exam_dict[key] = value
+
+print(exam_dict)
 

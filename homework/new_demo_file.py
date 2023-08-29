@@ -50,7 +50,6 @@
 #     new_cortege.insert(0, element)
 # print(tuple(new_cortege))
 
-
 # first, second, third, *fourth = corteg
 # fourth.reverse()
 # fourth.append(third)
@@ -61,4 +60,3 @@
 # corteg_ = list(corteg)
 # corteg_.reverse()
 # print(tuple(corteg_))
-
