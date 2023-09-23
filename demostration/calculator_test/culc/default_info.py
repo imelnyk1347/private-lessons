@@ -1,4 +1,4 @@
-import back_end
+from culc.back_end import input_choice
 
 
 def calculator():
@@ -12,4 +12,4 @@ def calculator():
           5. Піднесення до степеня. \n
           """)
 
-    return back_end.input_choice()
+    return input_choice()
