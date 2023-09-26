@@ -15,7 +15,8 @@ from culc import (
 from menu import (
                   menu,
                   user_choice,
-                  check_user_choice
+                  check_user_choice,
+                  extreme_exit
 )
 
 from work_with_text import *

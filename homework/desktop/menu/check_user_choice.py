@@ -1,6 +1,7 @@
 from culc.check_parameters_to_zero import check_parameters_to_zero
 from menu import menu
 from menu.user_choice import user_choice
+from menu.extreme_exit import extreme_exit
 
 
 def return_to_def_menu():
@@ -11,6 +12,8 @@ def check_user_choice_from_default_menu(parameter):
     if parameter > 4:
         print(f"No correct number {parameter} of choices. Please try again.")
         return return_to_def_menu()
+    if parameter == 0:
+        return extreme_exit()
 
 
 def check_parameter_on_numeric(check_obj):
