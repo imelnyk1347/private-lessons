@@ -1,4 +1,4 @@
-import check_parameter_to_numeric
+from calculator.check_parameter_to_numeric import check_parameter_to_numeric
 
 
 def check_parameters_to_zero(first_check_object, second_check_object):
@@ -14,4 +14,4 @@ def check_parameters_to_zero(first_check_object, second_check_object):
         # FIXME: crash
         # FIXME: zero check
 
-    return check_parameter_to_numeric.check_parameter_to_numeric(first_check_object, second_check_object)
+    return check_parameter_to_numeric(first_check_object, second_check_object)
