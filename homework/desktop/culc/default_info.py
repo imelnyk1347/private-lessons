@@ -3,6 +3,9 @@ from culc.back_end import input_choice
 
 def calculator():
     print("""
+    
+          Calculator.
+    
           Hello user.\n 
           Select operation:
           1. Додавання. 
