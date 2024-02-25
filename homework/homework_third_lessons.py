@@ -7,8 +7,6 @@
     - якщо юзер взагалі нічого не введе, то буде виведено "InputError:nothing has been entered"
 
 """
-from pprint import pprint
-
 # user_input = input("Please, enter the text: ")
 #
 # if len(user_input) == 0:
@@ -19,6 +17,9 @@ from pprint import pprint
 #     print(user_input.lower())
 # else:
 #     print('Error: unexpected result!')
+
+# Артем, виправи помилки в коді )))
+
 """
 2. Написати скрипт, який прийматиме на перевірку слово.
    Наприклад, юзер вводить 'SpaceX' і скрипт:
@@ -67,11 +68,13 @@ from pprint import pprint
 # elif text.count(user_input) == 0:
 #     if user_input.isdigit():
 #         print(f'The search for the digit "{user_input}" was not found.')
-#         exit()
+#         exit()  # Артем, спробуй дома написати скрипт з використанням данної функції
 #     print(f'The search for "{user_input}" was not found.')
 # elif text.count(user_input) > 0:
 #     print(f'Find: "{user_input}". Count: {text.count(user_input)}')
 
+
+# Артем, подивися, можливо в коді є якіст помилки або ж код можна покращити
 """
 4. Програма прийматиме дані юзера на вхід: ім'я, прізвище, вік, місце проживання, кількість батьків і виводитиме 
    введену інформацію в такому вигляді: 'Ваші дані успішно прийнято. Ваше прізвище та ім'я ""., Ваше місце народження та
@@ -106,17 +109,22 @@ from pprint import pprint
 #     exit()
 # if user_name.isalpha() and user_surname.isalpha() and user_living.isalpha():
 #     if user_name.islower() and user_surname.islower() and user_living.islower():
-#         print(user_name.title(), user_surname.title(), user_living.title())
 #         if not user_age.isdigit() and not user_parents.isdigit():
-#             print(f'Ваші дані успішно прийнято. Ваше прізвище та ім\'я {user_name} {user_surname}, '
-#                   f'Ваше місце народження та фактичне проживання {user_living}, Ви маєте {user_parents} батьків.'
-#                   f'Ваш вік {user_age} та кількість батьків {user_parents} було введено літерами, будь ласка, '
-#                   f'в майбутньому введіть цифри.')
+#             print(f'Ваші дані успішно прийнято. Ваше прізвище та ім\'я {user_name.title()} {user_surname.title()}, '
+#                   f'Ваше місце народження та фактичне проживання {user_living.title()}, Ви маєте {user_parents.upper()} '
+#                   f'батьків. \nВаш вік {user_age.upper()} та кількість батьків {user_parents.upper()} '
+#                   f'було введено літерами, будь ласка, в майбутньому введіть цифри.')
+#
 #         if user_age.isdigit() and user_parents.isdigit():
-#             if user_age > '100' and user_parents > '2':
-#                 print('InputError: incorrect input data')
-#             print(f'Ваші дані успішно прийнято. Ваше прізвище та ім\'я {user_name} {user_surname}, '
-#                   f'Ваше місце народження та фактичне проживання {user_living}, Ви маєте {user_parents} батьків.')
-#     print('error from lower case')
+#             user_age, user_parents = int(user_age), int(user_parents)
+#             if user_age > 99:
+#                 print(f'InputError: incorrect input data, user_age is {user_age}')
+#                 exit()
+#             if user_parents > 2:
+#                 print(f'InputError: incorrect input data, user_parents is {user_parents}')
+#                 exit()
+#             print(f'Ваші дані успішно прийнято. Ваше прізвище та ім\'я {user_name.title()} {user_surname.title()}, '
+#                   f'\nВаше місце народження та фактичне проживання {user_living.title()}, Ви маєте {user_parents} '
+#                   f'батьків.')
 # else:
-#     print('A mixed data type was entered')
+#     print('TypeError: invalid parameters !')
